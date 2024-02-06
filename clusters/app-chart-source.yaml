@@ -1,0 +1,15 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: GitRepository
+metadata:
+  name: dev-app-chart
+  namespace: chart-dev
+spec:
+  interval: 5m
+  url: https://github.com/bibistroc/dpp.git
+  ref:
+    branch: main
+  ignore: |-
+    # exclude all
+    /*
+    # include charts directory
+    !/3.helm/
