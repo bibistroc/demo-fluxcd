@@ -8,7 +8,7 @@ spec:
   releaseName: dev-app-chart
   chart:
     spec:
-      chart: app
+      chart: 3.helm/app
       sourceRef:
         kind: GitRepository
         name: dev-app-chart
